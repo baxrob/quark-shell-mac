@@ -44,7 +44,7 @@
 
     self.statusItem = [bar statusItemWithLength:NSSquareStatusItemLength];
     if (IS_PERIOR_TO_10_9) {
-        self.statusItemView = [[QSHStatusItemView alloc] initWithFrame:NSMakeRect(0, 0, 20, 20)];
+        self.statusItemView = [[QSHStatusItemView alloc] initWithFrame:NSMakeRect(0, 0, 0, 0)];
         self.statusItemView.target = self;
         self.statusItemView.action = @selector(statusItemClicked);
         [self.statusItemView sendActionOn:(NSLeftMouseDownMask | NSRightMouseDownMask)];

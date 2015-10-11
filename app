@@ -1,1 +1,1 @@
-sample
+/Users/ob/dev/sldc/gdd/static/js

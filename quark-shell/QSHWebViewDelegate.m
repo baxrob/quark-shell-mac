@@ -91,13 +91,16 @@ static const NSInteger kPreferencesDefaultHeight = 192;
         selector == @selector(checkUpdateInBackground:) ||
         selector == @selector(emitMessage:withPayload:) ||
         selector == @selector(subscribeMessage:withCallback:) ||
+        selector == @selector(consoleLog:) ||
         selector == @selector(showMenu:)) {
         return NO;
     }
 
     return YES;
 }
-
+- (void)consoleLog:(NSString *)aMessage {
+    NSLog(@"JSLog: %@", aMessage);
+}
 + (NSString *)webScriptNameForSelector:(SEL)selector
 {
     id result = nil;
@@ -249,8 +252,9 @@ static const NSInteger kPreferencesDefaultHeight = 192;
         self.statusItem.title = label;
         barTextAttributes = @{NSFontAttributeName: self.statusItem.button.font};
     }
+    //NSLog(@"%@ %f", label, [label sizeWithAttributes:barTextAttributes].width);
     // 20 is image width, 10 is extra margin
-    self.statusItem.length = 20 + [label sizeWithAttributes:barTextAttributes].width + 10;
+    self.statusItem.length = [label sizeWithAttributes:barTextAttributes].width + 7;
 }
 
 - (void)setLaunchAtLogin:(BOOL)launchAtLogin
@@ -500,6 +504,7 @@ static const NSInteger kPreferencesDefaultHeight = 192;
 
 - (void)webView:(WebView *)webView addMessageToConsole:(NSDictionary *)message
 {
+    //NSLog(@"%@", message);
 	if (![message isKindOfClass:[NSDictionary class]]) {
 		return;
 	}

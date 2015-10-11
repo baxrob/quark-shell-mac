@@ -14,8 +14,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _icon = [NSImage imageNamed:@"StatusIcon"];
-        _highlightedIcon = [NSImage imageNamed:@"StatusIconWhite"];
+        //_icon = [NSImage imageNamed:@"StatusIcon"];
+        //_highlightedIcon = [NSImage imageNamed:@"StatusIconWhite"];
     }
     return self;
 }
@@ -63,11 +63,12 @@
                                             NSFontAttributeName: MENUBAR_FONT,
                                             NSForegroundColorAttributeName: color
                                             };
-        [self.label drawInRect:NSMakeRect(25, 2, NSWidth(self.bounds) - 30, 20) withAttributes:barTextAttributes];
+        //NSLog(@"%f", NSWidth(self.bounds));
+        [self.label drawInRect:NSMakeRect(3, -1, NSWidth(self.bounds), 20) withAttributes:barTextAttributes];
     }
 
-    NSImage *iconImage = self.itemHighlighted ? self.highlightedIcon : self.icon;
-    [iconImage drawInRect:iconFrame];
+    //NSImage *iconImage = self.itemHighlighted ? self.highlightedIcon : self.icon;
+    //[iconImage drawInRect:iconFrame];
 }
 
 @end

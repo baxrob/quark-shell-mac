@@ -29,7 +29,11 @@
 		1AF6371E18E9FF430099B508 /* QSHWebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6371D18E9FF430099B508 /* QSHWebViewDelegate.m */; };
 		1AFBA8BA19483E4900BEDA0A /* QSHPreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */; };
 		1AFBA8BB19483E4900BEDA0A /* QSHPreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */; };
-		2E50CD93BE1C4FDAA087BA31 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDF5A5127B1458BB9768C43 /* libPods.a */; };
+		2E5AC8BE1BB9F993005AC107 /* libPods-ISO8601DateFormatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5AC8BA1BB9F993005AC107 /* libPods-ISO8601DateFormatter.a */; };
+		2E5AC8BF1BB9F993005AC107 /* libPods-LaunchAtLoginController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5AC8BB1BB9F993005AC107 /* libPods-LaunchAtLoginController.a */; };
+		2E5AC8C01BB9F993005AC107 /* libPods-MASShortcut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5AC8BC1BB9F993005AC107 /* libPods-MASShortcut.a */; };
+		2E5AC8C11BB9F993005AC107 /* libPods-RHPreferences.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5AC8BD1BB9F993005AC107 /* libPods-RHPreferences.a */; };
+		2EE9B6DA1BB9F94C0062A52E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE9B6D81BB9F92C0062A52E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,12 @@
 		1AFBA8B719483E4900BEDA0A /* QSHPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSHPreferencesViewController.h; sourceTree = "<group>"; };
 		1AFBA8B819483E4900BEDA0A /* QSHPreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSHPreferencesViewController.m; sourceTree = "<group>"; };
 		1AFBA8B919483E4900BEDA0A /* QSHPreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QSHPreferencesViewController.xib; sourceTree = "<group>"; };
+		2E5AC8BA1BB9F993005AC107 /* libPods-ISO8601DateFormatter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ISO8601DateFormatter.a"; path = "../../../../Desktop/quark-files/libPods-ISO8601DateFormatter.a"; sourceTree = "<group>"; };
+		2E5AC8BB1BB9F993005AC107 /* libPods-LaunchAtLoginController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-LaunchAtLoginController.a"; path = "../../../../Desktop/quark-files/libPods-LaunchAtLoginController.a"; sourceTree = "<group>"; };
+		2E5AC8BC1BB9F993005AC107 /* libPods-MASShortcut.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-MASShortcut.a"; path = "../../../../Desktop/quark-files/libPods-MASShortcut.a"; sourceTree = "<group>"; };
+		2E5AC8BD1BB9F993005AC107 /* libPods-RHPreferences.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RHPreferences.a"; path = "../../../../Desktop/quark-files/libPods-RHPreferences.a"; sourceTree = "<group>"; };
+		2E60DFE21BB75D8D00F40C03 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2EE9B6D81BB9F92C0062A52E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "../../../../Desktop/quark-files/libPods.a"; sourceTree = "<group>"; };
 		6AFB3BBE0E79B03C1B72DCF5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BEDF5A5127B1458BB9768C43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95033968F72053A096CA5D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,9 +102,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5AC8BE1BB9F993005AC107 /* libPods-ISO8601DateFormatter.a in Frameworks */,
+				2E5AC8BF1BB9F993005AC107 /* libPods-LaunchAtLoginController.a in Frameworks */,
+				2E5AC8C01BB9F993005AC107 /* libPods-MASShortcut.a in Frameworks */,
+				2E5AC8C11BB9F993005AC107 /* libPods-RHPreferences.a in Frameworks */,
+				2EE9B6DA1BB9F94C0062A52E /* libPods.a in Frameworks */,
 				1A91FA5A18E25F3C00AA8B7E /* WebKit.framework in Frameworks */,
 				1A91F9E318E2530B00AA8B7E /* Cocoa.framework in Frameworks */,
-				2E50CD93BE1C4FDAA087BA31 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +148,12 @@
 		1A91F9E118E2530B00AA8B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E5AC8BA1BB9F993005AC107 /* libPods-ISO8601DateFormatter.a */,
+				2E5AC8BB1BB9F993005AC107 /* libPods-LaunchAtLoginController.a */,
+				2E5AC8BC1BB9F993005AC107 /* libPods-MASShortcut.a */,
+				2E5AC8BD1BB9F993005AC107 /* libPods-RHPreferences.a */,
+				2EE9B6D81BB9F92C0062A52E /* libPods.a */,
+				2E60DFE21BB75D8D00F40C03 /* Podfile */,
 				1A91FA5918E25F3C00AA8B7E /* WebKit.framework */,
 				1A91F9E218E2530B00AA8B7E /* Cocoa.framework */,
 				1A91FA0118E2530B00AA8B7E /* XCTest.framework */,
@@ -530,6 +550,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "quark-shell/quark-shell-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/quark-shell/quark-shell-Info.plist";
+				LIBRARY_SEARCH_PATHS = "/Users/Library/Developer/Xcode/DerivedData/quark-shell-ggbwbitfhfnpunbahtmzqhiqgueq/Build/Products/Debug/**";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "quark-shell";
 				WRAPPER_EXTENSION = app;
@@ -545,6 +566,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "quark-shell/quark-shell-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/quark-shell/quark-shell-Info.plist";
+				LIBRARY_SEARCH_PATHS = "/Users/Library/Developer/Xcode/DerivedData/quark-shell-ggbwbitfhfnpunbahtmzqhiqgueq/Build/Products/Debug/**";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_NAME = "quark-shell";
 				WRAPPER_EXTENSION = app;

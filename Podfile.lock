@@ -25,10 +25,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/xhacker/MASShortcut.git
 
 SPEC CHECKSUMS:
-  ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
+  ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
   LaunchAtLoginController: 71a15a1e36d318c84739d72f3606be4779a47b47
   MASShortcut: 48e9edc2ae45df6d4e9f10c3c26a49972eaf92ac
-  RHPreferences: d0215102b7b8cd9f501655e5e7db2551ef4dc0e5
-  Sparkle: 5eb20bb37ca21e471dab8417dee880198d905327
+  RHPreferences: 6871f9614347f4b45197c51f7c93c3cde2744ce8
+  Sparkle: 3adb45d38bcdf80caf505f2b4cd693031db70835
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.37.1

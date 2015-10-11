@@ -95,6 +95,9 @@ function setIcon() {
     highlightedIconCtx.fillRect(6, 8, 28, 28)
     highlightedIconCtx.clearRect(12, 14, 16, 16)
 
+    iconCanvas.width = iconCanvas.height = 
+        highlightedIconCanvas.width = highlightedIconCanvas.height = 0
+
     quark.setMenubarIcon(iconCanvas.toDataURL())
     quark.setMenubarHighlightedIcon(highlightedIconCanvas.toDataURL())
 }
